@@ -10,13 +10,37 @@
 <body>
 	<div class="mdiv">
 		<div class="container">
-			<h1>WEATHER FORECAST</h1>
+			<h1 align="center">WEATHER FORECAST</h1>
+			<br>
 			<form>
-				<input type="text" name="city" id="city_name" placeholder="Enter a city">
+				<input type="text" name="city" id="city_name" placeholder="Enter a city" autofocus>
 				<button type="button" onclick="fetchCity()">&#x1F50D</button>
+			
+		        <div align="center">
+			      <img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" alt="Weather_App" height="140px" width="200px">
+		        </div>
+		        <div>
+		        	<span id="city">CITY NAME</span>
+		        	<br>
+		        	<span id="temp"><h3>0°C</h3></span>
+		        </div>
+		        <br>
+		        <div align="center">
+		        	<table width="100%" cellpadding="10px">
+		        		<tr>
+		        			<td>
+		        				<h5 class="head">WIND SPEED</h5>
+		        				<span id="wind_speed"><h3>0 km/hr</h3></span>
+		        			</td>
+		        			<td>
+		        				<h4 class="head">HUMIDITY</h4>
+		        				<span id="humidity"><h3>0 g/kg</h3></span>
+		        			</td>
+		        		</tr>
+		        	</table>
+		        </div>	
 			</form>
-		</div>
-		
+		</div>	
 	</div>
 </body>
 </html>
